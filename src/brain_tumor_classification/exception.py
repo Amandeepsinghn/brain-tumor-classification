@@ -11,8 +11,9 @@ def exception(error,error_details:sys):
 
     file_name=exc_tb.tb_frame.f_code.co_filename
 
-    return f"error found in script {file_name} in line {exc_tb.tb_lineno} and error is {str(error)}"
+    error_msg=f"error found in script {file_name} in line {exc_tb.tb_lineno} and error is {str(error)}"
 
+    return error_msg
 
 
 class Custom_Exception(Exception):

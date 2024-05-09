@@ -1,0 +1,9 @@
+artifacts_root: artifacts 
+
+
+Data_ingestion:
+  root_dir: artifacts/data_ingestion
+  uznip_files: artifacts/data_ingestion/files 
+  download_file: /home/googlyji/datasets/ 
+
+
