@@ -1,0 +1,1 @@
+from src.brain_tumor_classification.pipeline.stage_01_ingestion import data_ingestion_pipeline

@@ -1,0 +1,1 @@
+from src.brain_tumor_classification.components.data_ingestion import comp_data_ingestion
