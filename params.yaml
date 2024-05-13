@@ -1,1 +1,6 @@
-key: value
+Image_size: [224,224,3]
+Batch_size: 16
+weights: "imagenet"
+epochs: 1
+classes: 4
+include_top: False

@@ -29,6 +29,21 @@ class Configuration_manager:
                                         download_file=config.download_file)
             
             return Data_ingestion
+        
+        def base_model_config(self)->Base_model:
+            config=self.config.base_model
+
+            base_model_config=Base_model(root_dir=config.root_dir,model_weights=config.model_weights,updated_model_weights=config.updated_model_weights,
+                                    Image_size=self.params.Image_size, 
+                                    Batch_size=self.params.Batch_size,
+                                    weights=self.params.weights,
+                                    epochs=self.params.epochs,
+                                    classes=self.params.classes,
+                                    include_top=self.params.include_top)
+        
+
+            return base_model_config
+        
 
     except Exception as e:
         raise(Custom_Exception(e,sys))

@@ -4,6 +4,12 @@ artifacts_root: artifacts
 Data_ingestion:
   root_dir: artifacts/data_ingestion
   uznip_files: artifacts/data_ingestion/files 
-  download_file: /home/googlyji/datasets/ 
+  download_file: /home/googlyji/datasets/
 
 
+
+
+base_model:
+  root_dir: artifacts/base_model 
+  model_weights: artifacts/base_model/model.h5
+  updated_model_weights: artifacts/base_model/model.VGG16.h5

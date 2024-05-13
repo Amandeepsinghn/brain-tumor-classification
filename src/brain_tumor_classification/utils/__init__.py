@@ -1,1 +1,1 @@
-from src.brain_tumor_classification.utils import *
+from src.brain_tumor_classification.utils.common import *

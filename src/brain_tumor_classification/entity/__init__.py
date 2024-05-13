@@ -1,1 +1,1 @@
-from src.brain_tumor_classification.entity.config_entity import (data_ingestion_config)
+from src.brain_tumor_classification.entity.config_entity import (data_ingestion_config,Base_model)
