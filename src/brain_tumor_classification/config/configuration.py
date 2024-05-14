@@ -30,6 +30,7 @@ class Configuration_manager:
             
             return Data_ingestion
         
+
         def base_model_config(self)->Base_model:
             config=self.config.base_model
 
@@ -43,7 +44,10 @@ class Configuration_manager:
         
 
             return base_model_config
-        
+
+
+
+
 
     except Exception as e:
         raise(Custom_Exception(e,sys))

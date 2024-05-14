@@ -22,4 +22,3 @@ class Base_model:
     epochs: int
     classes: int
     include_top:bool
-
