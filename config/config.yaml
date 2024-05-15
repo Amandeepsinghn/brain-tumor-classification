@@ -13,3 +13,10 @@ base_model:
   root_dir: artifacts/base_model 
   model_weights: artifacts/base_model/model.h5
   updated_model_weights: artifacts/base_model/model.VGG16.h5
+
+
+
+prepare_callbacks:
+  root_dir: artifacts/callbacks 
+  tensorboard_dir: artifacts/callbacks/tensorboard_log
+  checkpoint: artifacts/callbacks/model_checkpoint/model.h5
