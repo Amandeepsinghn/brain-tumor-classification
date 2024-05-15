@@ -22,3 +22,9 @@ class Base_model:
     epochs: int
     classes: int
     include_top:bool
+
+@dataclass
+class check_:
+    root_dir: Path
+    tensorboard_dir: Path
+    checkpoint: Path

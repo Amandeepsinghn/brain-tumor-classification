@@ -46,6 +46,23 @@ class Configuration_manager:
             return base_model_config
 
 
+        def config_check(self)->check_:
+        
+            config=self.config.prepare_callbacks
+
+            create_directories([config.root_dir])
+            create_directories([config.tensorboard_dir])
+            create_directories([config.checkpoint])
+
+
+            data_checkpoint=check_(
+                root_dir=config.root_dir,
+                tensorboard_dir=config.tensorboard_dir,
+                checkpoint=config.checkpoint
+            )
+
+            return data_checkpoint
+    
 
 
 
