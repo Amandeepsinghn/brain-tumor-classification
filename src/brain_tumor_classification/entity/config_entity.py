@@ -28,3 +28,13 @@ class check_:
     root_dir: Path
     tensorboard_dir: Path
     checkpoint: Path
+
+
+@dataclass(frozen=True)
+class Training_Config:
+    root_dir:Path
+    trained_model_path:Path
+    updated_model_weights:Path
+    training_data: Path 
+    params_epochs: int 
+    params_image_size: list  

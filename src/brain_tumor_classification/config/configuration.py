@@ -62,6 +62,26 @@ class Configuration_manager:
             )
 
             return data_checkpoint
+        
+        def training_config(self)-> Training_Config:
+            training=self.config.training
+            params=self.params
+            prepare_updated_model=self.config.base_model
+            training_data=os.path.join("artifacts/data_ingestion/files/bain_tumor/Training")
+
+            create_directories([training.root_dir])
+
+
+            training_config=Training_Config(
+                root_dir=Path(training.root_dir),
+                trained_model_path=Path(training.trained_model_path),
+                updated_model_weights=Path(prepare_updated_model.updated_model_weights),
+                training_data=Path(training_data), 
+                params_epochs=params.epochs, 
+                params_image_size=params.Image_size
+                )  
+
+            return training_config
     
 
 
