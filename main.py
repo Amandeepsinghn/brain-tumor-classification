@@ -4,6 +4,7 @@ from src.brain_tumor_classification.exception import Custom_Exception
 import sys
 from src.brain_tumor_classification.pipeline import Model_pipeline
 from src.brain_tumor_classification.pipeline import training_pipeline
+from src.brain_tumor_classification.pipeline import evaluation_pipeline
 
 try:
     a=data_ingestion_pipeline()
@@ -31,6 +32,17 @@ try:
     logging.info("model training has been started")
     c.main()
     logging.info("model training has been done")
+
+except Exception as e:
+    raise(Custom_Exception(e,sys))
+
+
+
+try:
+    d=evaluation_pipeline()
+    logging.info('evaluation has started')
+    d.main()
+    logging.info("evaluation has been done")
 
 except Exception as e:
     raise(Custom_Exception(e,sys))

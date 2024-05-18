@@ -82,7 +82,18 @@ class Configuration_manager:
                 )  
 
             return training_config
-    
+
+        def evluation_config(self)->evaluation:
+            config=self.config.training
+
+            evaluation_stats=evaluation(
+                training_data=Path("artifacts/data_ingestion/files/bain_tumor/Testing"),
+                model_path=config.trained_model_path,
+                image_size=self.params.Image_size
+            )
+
+            return evaluation_stats
+
 
 
 

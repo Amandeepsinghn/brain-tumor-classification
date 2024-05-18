@@ -2,3 +2,4 @@ from src.brain_tumor_classification.components.data_ingestion import comp_data_i
 from src.brain_tumor_classification.components.Base_model import Prepare_base_model
 from src.brain_tumor_classification.components.callbacks import comp_checkpoint_ingestion
 from src.brain_tumor_classification.components.Train_model import Training
+from src.brain_tumor_classification.components.evaluation import Evaulation_start

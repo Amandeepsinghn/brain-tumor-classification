@@ -38,3 +38,10 @@ class Training_Config:
     training_data: Path 
     params_epochs: int 
     params_image_size: list  
+
+
+@dataclass
+class evaluation:
+    training_data: Path
+    model_path: Path
+    image_size: list
