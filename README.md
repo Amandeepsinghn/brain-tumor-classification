@@ -2,7 +2,7 @@
 
 
 
-https://github.com/Amandeepsinghn/brain-tumor-classification/assets/137553469/525056e0-582e-4bf3-9f6f-4deac293137e
+https://github.com/Amandeepsinghn/brain-tumor-classification/assets/137553469/018fd305-47e2-4de9-a9d1-64eb54237300
 
 
 
