@@ -1,6 +1,11 @@
 # Brain tumor classification
 
 
+
+https://github.com/Amandeepsinghn/brain-tumor-classification/assets/137553469/525056e0-582e-4bf3-9f6f-4deac293137e
+
+
+
 ## Workflow
 
 1) Update config.yaml 
